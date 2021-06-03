@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Colour Schemes</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom CSS -->
+    <link href="/css/index.css" rel="stylesheet">
+  </head>
+
+<body>
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row">
+    <a class="py-2 logo-link" href="#">
+      <img src="/img/colour-wheel.png" class="logo-img">
+    </a>
+    <a class="py-2 d-none d-md-inline-block ml-auto font-weight-bold" href="#about">About</a>
+    <a class="py-2 d-none d-md-inline-block pl-5 font-weight-bold" href="#types">Types</a>
+    <a class="py-2 d-none d-md-inline-block pl-5 font-weight-bold" href="#example">Examples</a>
+  </nav>
+</header>
+
+<main>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <div class="position-relative overflow-hidden p-1 p-md-1 m-md-1 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-bold pb-1">Colour <br/>Schemes</h1>
+      <p class="lead fw-normal pb-1">Need assistance choosing colours for your designs?</p>
+      <img src="/img/colour-wheel.png" class="colour-wheel pb-3 ">
+      <a class="btn btn-outline-secondary mt-3 pt-1 font-weight-bold" href="#example">View Examples</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <!-- ABOUT SECTION START -->
+  <div class="container" id="about">
+    <h2 class="py-3 pt-5 border-bottom font-weight-bold">About</h2>
+  </div>
+  <div class="colour-grid-container d-md-flex flex-md-equal w-100 h-100 my-md-3 ps-md-3 align-items-center">
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3 ">
+        <p>Understanding what emotions certain colours elicit will help you choose a colour to go along with your design, brand or website.</p>
+        <p>It allows you to communicate your vision or plan to people easier if you know what emotions you want to elicit in your customers.</p>
+      </div>
+    </div>
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="colour-grid ">
+          <div class="grid-1"></div>
+          <div class="grid-2"></div>
+          <div class="grid-3"></div>
+          <div class="grid-4"></div>
+          <div class="grid-5"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT SECTION END -->
+
+  <!-- COLOUR WHEEL SECTION START -->
+  <div class="container pb-1">
+    <h2 class="py-3 pt-5 border-bottom font-weight-bold">Colour Wheel</h2>
+  </div>
+  <div class="colour-grid-container d-md-flex flex-md-equal w-100 h-100 my-md-3 ps-md-3 align-items-center">
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3 ">
+        <p>The colour wheel consists of three primary colours (red, yellow, blue or RGB for short), three secondary colours (created by combining primary colours (purple, orange, green), and six tertiary colours  (created by combining primary and secondary   colours.<br /> 
+          <p class="text-muted">Tertiary colours are located in between the primary and secondary colours on the colour wheel shown.</p>
+        </p>
+      </div>
+    </div>
+    <div class="me-md-3 pt-1  pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="pb-5">
+        <img src="/img/colour-wheel.png" class="colour-wheel-static mb-3">
+      </div>
+    </div>
+  </div>
+  <!-- COLOUR WHEEL SECTION END -->
+
+  <!-- COLOUR TYPES SECTION START -->
+  <div class="container pb-1" id="types">
+    <h2 class="py-3 pt-5 border-bottom font-weight-bold">Colour Types</h2>
+  </div>
+  <div class="colour-types-container pb-4 mb-5 d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <!-- LEFT SIDE START -->
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="m-3 pb-5">
+        <div class="colour-boxes d-flex justify-content-center pb-2">
+          <div class="warm-box-1"></div>
+          <div class="warm-box-2"></div>
+          <div class="warm-box-3"></div>
+          <div class="warm-box-4"></div>
+          <div class="warm-box-5"></div>
+        </div>
+        <h4 class="font-weight-bold">Warm colours</h4>
+        <p>On one side of the colour wheel we have the warm colours. Warm colours elicit feelings of warmth and energy, as the colours are associated with fire, the sun and heat.</p>
+      </div>
+    </div>
+    <!-- LEFT SIDE END -->
+    <!-- RIGHT SIDE START -->
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="m-3 pb-5">
+        <div class="colour-boxes d-flex justify-content-center pb-2">
+          <div class="cool-box-1"></div>
+          <div class="cool-box-2"></div>
+          <div class="cool-box-3"></div>
+          <div class="cool-box-4"></div>
+          <div class="cool-box-5"></div>
+        </div>
+        <h4 class="font-weight-bold pb-1">Cool colours</h4>
+        <p>On the other side of the colour wheel we have the cool colours. Cool colours elicit feelings of coolness and calm, as the colours are associated with water, the sky, ice and grass.
+      </div>
+    </div>
+    <!-- RIGHT SIDE END -->
+  </div>
+  <!-- COLOUR TYPES SECTION END -->
+
+  <!-- COLOUR SCHEMES SECTION START -->
+  <div class="container pb-1">
+    <h2 class="py-3 border-bottom font-weight-bold">Colour Schemes</h2>
+  </div>
+    <!-- COMPLEMENTARY -->
+  <div class="colour-scheme-container d-md-flex flex-md-equal w-100 h-100 pt-4 pb-3 align-items-center">
+    <div class="colour-scheme-content me-md-3 text-center overflow-hidden">
+        <h4 class="display-6 font-weight-bold">Complementary</h4>
+        <p>These colours are on opposite sides of the colour wheel. This combination is a high contrast, vibrant combination and works well when you want something to stand out, though the scheme must be managed properly so it is not tiresome. An example of this is Christmas colours.
+        </p>
+    </div>
+    <div class="me-md-3 text-center overflow-hidden">
+      <div class="colour-scheme-wheel pb-2">
+        <img src="/img/complementary.png" class="colour-wheel-static">
+      </div>
+    </div>
+  </div>
+  <hr />
+  <!-- ANALOGOUS -->
+  <div class="colour-scheme-container d-md-flex flex-md-equal w-100 h-100 pt-4 pb-3 align-items-center">
+    <div class="colour-scheme-content text-center overflow-hidden">
+        <h4 class="display-6 font-weight-bold">Analogous</h4>
+        <p>Analogous colours are adjacent to each other on the colour wheel. When using analogous colours, usually one colour is used to dominate, a second to support and the third will accent. This colour scheme is pleasing to the eye and depending on the colours can be quite calming.
+        </p>
+    </div>
+    <div class="text-center overflow-hidden">
+      <div class="colour-scheme-wheel pb-2">
+        <img src="/img/analogous.png" class="colour-wheel-static">
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <!-- TRIADIC -->
+  <div class="colour-scheme-container d-md-flex flex-md-equal w-100 h-100 pt-4 pb-4 align-items-center">
+    <div class="colour-scheme-content text-center overflow-hidden">
+        <h4 class="display-6 font-weight-bold">Triadic</h4>
+        <p>A triadic colour scheme uses three colours that are evenly spaced on the colour wheel. This colour scheme is vibrant, but less than complementary colour schemes. While you can make things stand out, it should be balanced, for example using one colour to dominate and two accent colours.
+        </p>
+    </div>
+    <div class="text-center overflow-hidden">
+      <div class="colour-scheme-wheel pb-2">
+        <img src="/img/triadic.png" class="colour-wheel-static">
+      </div>
+    </div>
+  </div>
+  <!-- COLOUR SCHEMES SECTION END -->
+
+
+<!-- COLOUR EXAMPLES SECTION START -->
+<div class="container py-5 " id="example">
+  <h2 class="pb-3 border-bottom">Colour Scheme Examples</h2>
+
+  <!-- ROW 1 START -->
+  <div class="row row-cols-3 align-items-stretch pb-2 pt-2">
+    <!-- CARD 1 -->
+    <div class="col py-2">
+      <!-- CARD IMG -->
+      <div class="colour-scheme-card-1 card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <!-- CARD CONTENT -->
+          <div class="colour-scheme-colours pt-5">
+            <div class="card-1-colour-1">#161F6D</div>
+            <div class="card-1-colour-2">#00ABE1</div>
+            <div class="card-1-colour-3">#00ABE1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col py-2">
+      <!-- CARD IMG -->
+      <div class="colour-scheme-card-2 card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <!-- CARD CONTENT -->
+          <div class="colour-scheme-colours pt-5">
+            <div class="card-2-colour-1">#021C1E</div>
+            <div class="card-2-colour-2">#004445</div>
+            <div class="card-2-colour-3">#2c7873</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- END OF ROW 1-->
+
+  <!-- ROW 2 START -->
+  <div class="row row-cols-3 align-items-stretch py-2">
+
+    <!-- CARD 3 -->
+    <div class="col py-2">
+      <!-- CARD IMG -->
+      <div class="colour-scheme-card-3 card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <!-- CARD CONTENT -->
+          <div class="colour-scheme-colours pt-5">
+            <div class="card-3-colour-1">#0F1626</div>
+            <div class="card-3-colour-2">#F7882F</div>
+            <div class="card-3-colour-3">#F5F5F5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col py-2">
+      <!-- CARD IMG -->
+      <div class="colour-scheme-card-4 card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <!-- CARD CONTENT-->
+          <div class="colour-scheme-colours pt-5">
+            <div class="card-4-colour-1">#000</div>
+            <div class="card-4-colour-2">#FEDc3d</div>
+            <div class="card-4-colour-3">#FF0000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- END OF ROW 2-->
+
+  <!-- ROW 3 START-->
+  <div class="row row-cols-3 align-items-stretch pb-5">
+    
+
+    <!-- CARD 5 -->
+    <div class="col py-2">
+      <!-- CARD IMG -->
+      <div class="colour-scheme-card-5 card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <!-- CARD CONTENT-->
+          <div class="colour-scheme-colours pt-5">
+            <div class="card-5-colour-1">#F25C00</div>
+            <div class="card-5-colour-2">#F70025</div>
+            <div class="card-5-colour-3">#f7EFE2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="col py-2">
+      <!-- CARD IMG -->
+      <div class="colour-scheme-card-6 card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <!-- CARD CONTENT-->
+          <div class="colour-scheme-colours pt-5">
+            <div class="card-6-colour-1">#1E1F26</div>
+            <div class="card-6-colour-2">#4D648D</div>
+            <div class="card-6-colour-3">#D0E1F9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- END OF ROW 3-->
+</div>
+<!-- COLOUR EXAMPLES SECTION END -->
+
+</main>
+
+<div class="text-center p-2 mt-3 footer-copyright">
+  <p class="pt-3">&copy; Website by Jason Requizo
+   <script type="text/javascript">
+     document.write(new Date().getFullYear());
+   </script> 
+  </p>
+</div>
+
+    <script src="index.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>

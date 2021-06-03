@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$font-family-bebas: 'Bebas Neue', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 60em;
+  }
+  
+  /* Custom translucent site header
+  */
+   
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Extra utilities
+   */
+  
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+
+// SCROLL TO TOP BUTTON FROM W3SCHOOLS
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 2em; /* Place the button at the bottom of the page */
+  right: 2em; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, .85); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.5em 0.8em;
+  border-radius: 16px; /* Rounded corners */
+  font-size: 1.2em; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* ---NAV START--- */
+.logo-link {
+  display:inline-block;
+}
+
+.logo-img {
+  display:block;
+  width: 1.7em;
+
+  &:hover {
+    animation: rotation 2s linear infinite;
+  }
+}
+// ANIMATION TO ROTATE
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---NAV END--- */
+
+/* ---HERO SECTION START--- */
+
+.colour-wheel {
+    height: 12em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: rotation 5s normal infinite linear;
+    
+}
+
+/* ---HERO SECTION END--- */
+
+/* ---ABOUT SECTION START--- */
+.colour-grid-container {
+  font-family: $font-family-montserrat;
+}
+
+.colour-grid {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: 5.5em 5.5em 5.5em;
+  grid-template-rows: 5.5em 5.5em 5.5em;
+  grid-template-areas: 
+    "a b ."
+    ". c d"
+    ". e .";     
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+}
+
+.grid-1 {
+  grid-area:a;
+  background-color: rgb(143, 190, 48);
+  animation : grid-1-colour 3s alternate-reverse infinite; 
+}
+@keyframes grid-1-colour {
+  from {background-color: rgb(143, 190, 48);}
+  to {background-color:rgb(142,10,49);}
+}
+
+.grid-2 {
+  grid-area:b;
+  background-color:rgb(255, 84, 22);
+}
+.grid-3 {
+  grid-area:c;
+  background-color: rgb(25, 25, 180);
+}
+.grid-4 {
+  grid-area:d;
+  background-color: rgb(255, 255, 28);
+  animation : grid-4-colour 4s alternate-reverse infinite; 
+}
+
+@keyframes grid-4-colour {
+  from {background-color: rgb(255, 255, 28);}
+  to {background-color:rgb(10, 122, 142);}
+}
+.grid-5 {
+  grid-area:e;
+  background-color: rgb(255, 171, 15);
+  animation : grid-5-colour 5s alternate-reverse infinite; 
+}
+@keyframes grid-5-colour {
+  from {background-color: rgb(255, 171, 15)}
+  to {background-color:rgb(118, 29, 190);}
+}
+/* ---ABOUT SECTION END--- */
+
+/* ---COLOUR WHEEL SECTION START--- */
+.colour-wheel-static {
+  height: 12em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ---COLOUR WHEEL SECTION END--- */
+
+/* ---COLOUR TYPES SECTION START--- */
+
+.colour-boxes {
+  
+  div {
+    height: 2.2em;
+    width:2.2em;
+  }
+}
+  // WARM COLOURS BOXES
+.warm-box-1 {
+  background-color: rgb(167,30,74);
+}
+.warm-box-2 {
+  background-color:rgb(238,52,37);
+}
+.warm-box-3 {
+  background-color: rgb(241,85,35);
+}
+.warm-box-4 {
+  background-color: rgb(249,155,32);
+}
+.warm-box-5 {
+  background-color: rgb(248,188,24);
+}
+  /* ---WARM COLOURS END --- */
+
+  // COOL COLOURS BOXES
+.cool-box-1 {
+  background-color: rgb(22,149,206);
+}
+.cool-box-2 {
+  background-color: rgb(62,95,173);
+}
+.cool-box-3 {
+  background-color: rgb(72,50,144);
+}
+.cool-box-4 {
+  background-color: blue;
+}
+.cool-box-5 {
+  background-color: rgb(99,178,71);
+}
+  /* ---COOL COLOURS END --- */
+
+/* ---COLOUR TYPES SECTION END--- */
+
+/* ---COLOUR SCHEMES SECTION START--- */
+
+.colour-scheme-content {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+
+  h4 {
+    color: rgb(53, 53, 53);
+  }
+}
+
+.colour-scheme-wheel {
+  opacity: 0.9;
+}
+/* ---COLOUR SCHEMES SECTION END--- */
+
+/* ---COLOUR SCHEMES EXAMPLES START--- */
+
+.colour-scheme-card-1 {
+  background-image: url(/img/colour-scheme-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+  .card-1-colour-1 {
+    background: #161F6D;
+  }
+  .card-1-colour-2 {
+    background: #00ABE1;
+  }
+  .card-1-colour-3 {
+    background: #d9d9d9;
+    color: #000;
+  }
+}
+
+.colour-scheme-card-2 {
+  background-image: url(/img/colour-scheme-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+  .card-2-colour-1 {
+    background: #021C1E;
+  }
+  .card-2-colour-2 {
+    background: #004445;
+  }
+  .card-2-colour-3 {
+    background: #2c7873;
+  }
+}
+
+.colour-scheme-card-3 {
+  background-image: url(/img/colour-scheme-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+  .card-3-colour-1 {
+    background: #0f1626;
+  }
+  .card-3-colour-2 {
+    background: #f7882f;
+  }
+  .card-3-colour-3 {
+    background: #F5f5f5;
+    color: #000;
+  }
+}
+
+.colour-scheme-card-4 {
+  background-image: url(/img/colour-scheme-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+  .card-4-colour-1 {
+    background: #000;
+  }
+  .card-4-colour-2 {
+    background: #FEDc3d;
+    color: #000;
+  }
+  .card-4-colour-3 {
+    background: #FF0000;
+    color: #000;
+  }
+}
+
+.colour-scheme-card-5 {
+  background-image: url(/img/colour-scheme-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+  .card-5-colour-1 {
+    background: #f25C00
+  }
+  .card-5-colour-2 {
+    background: #f70025;
+    color: #000;
+  }
+  .card-5-colour-3 {
+    background: #f7efe2;
+    color: #000;
+  }
+}
+
+.colour-scheme-card-6 {
+  background-image: url(/img/colour-scheme-6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+
+  .card-6-colour-1 {
+    background: #1E1F26;
+  }
+  .card-6-colour-2 {
+    background: #4D648D;
+    
+  }
+  .card-6-colour-3 {
+    background: #D0E1F9;
+    color: #000;
+  }
+}
+
+.colour-scheme-colours {
+  
+  div {
+    height: 4em;
+    width:6em;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.4em;
+  }
+}
+
+
+
+/* ---COLOUR SCHEMES EXAMPLES END--- */
+
+/* ---FOOTER--- */
+
+.footer-copyright {
+    color: #fff;
+    background: rgb(47,134,248);
+    background: linear-gradient(90deg, rgba(47,134,248,1) 0%, rgba(70,35,165,1) 100%);
+}
+
