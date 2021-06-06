@@ -119,6 +119,21 @@ html {
   padding-left: 1em;
 }
 
+// IPHONE 5 / 5S media query
+@media screen and (device-height: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .colour-grid {
+    grid-template-columns: 4.5em 4.5em 4.5em;
+    grid-template-rows: 4.5em 4.5em 4.5em;
+  }
+}
+
+// PIXEL 2 
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+  .colour-grid {
+    padding-left: 2em;
+  } 
+}
+
 .grid-1 {
   grid-area:a;
   background-color: rgb(143, 190, 48);
